@@ -1,2 +1,0 @@
-Hoi Maailma
-t. Eevert
