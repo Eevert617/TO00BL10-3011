@@ -10,11 +10,61 @@
 			}
 		</style>
 		<script>
-			<!-- JavaScript goes here -->
+			<!-- Exercise 1 -->
+			document.write('<p><strong><i>"If I had nine hours to chop down a tree, I´d spend the first six sharpening my ax."</i></strong></p>');
+			document.write("<p><i>-- Abraham Lincoln</i></p>");
+
+			<!-- Exercise 2 -->
+			function repeatingText() {
+				for (i = 0; i < 50; i ++) {
+					document.write("Lorem ipsum ");
+				}
+			}
+
+			<!-- Exercise 3-->
+			function browser() {
+				if (navigator.appVersion.indexOf("Mozilla")) {
+    				location.href = "http://mozilla.org";
+				}
+				else {
+    				location.href = "http://www.microsoft.com";
+				}
+			}
+
+			<!-- Exercise 4-->
+			function student() {
+				var r = confirm('Press "OK" if you are sudent')
+				if (r == true) {
+					document.write("<h1>Welcome student</h1>");
+				}
+				else document.write("<h1>Sorry, this page is for students only</h1>");
+			}
+
+			<!-- Exercise 5-->
+			var images = [
+			"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg", 
+			"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg", 
+			"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+			];
+			function exercise5() {
+				var number = Math.round (Math.random() * 2);
+				if (number == 0) {
+					document.write("<img src='http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg'>")
+				}
+				else if (number == 1) {
+					document.write("<img src='http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg'>")
+				}
+				else {
+					document.write("<img src='http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg'>")
+				}
+			}
 		</script>
 </head>
 
-
+<button onclick="repeatingText()">Exercise 2</button>
+<button onclick="browser()">Exercise 3</button>
+<button onclick="student()">Exercise 4</button>
+<button onclick="exercise5()">Exercise 5</button>
 <p>Workshop 2</p>
 <div>
 <h1>Workshop 2: JavaScript BOM and Events&nbsp; </h1>
