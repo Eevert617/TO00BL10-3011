@@ -96,7 +96,7 @@ function exercise32() {
   }
 }
 
-<!--Exercise 4-->
+<!--Exercise 4 on bottom of HTML-->
 
 </script>
 
@@ -187,7 +187,7 @@ var persons = ["Nyssa P. Skinner", "593-4241 Lacus, St.","Cape Verde",
 </xmp>
 </ul>
 
-<h2 onmouseover="exercise2()", onmouseout="-()">Exercise 2</h2>
+<h2 onmouseover="exercise2()", onmouseout="byebye()">Exercise 2</h2>
 
 <ul>
   <li>Add an&nbsp;onMouseOver event on the&nbsp;Heading "Exercise 2" of this page.&nbsp;It should&nbsp;fire when the users mouse is moved
@@ -213,7 +213,8 @@ command:   <i>document.getElementById("textdata").value</i>. We will study the f
 <h2>Exercise 4</h2>
 So far you have hardcoded the events into HTML tags. Make a copy of your exercise file and try to add the events dynamically, without touching the HTML at all. This can be 
 achieved using addEventListener() -function, <a target="_blank" href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp"> see more here</a>.
-
+<br><br>
+<button id="exercise4">Dont click me!</button>
 <h2>Exercise 5</h2>
 
 <div id="coordinates"></div>
@@ -235,4 +236,13 @@ The second button should show your location on a Google Maps. You can see the ma
 "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false" where latlon is your latitude + longitute data separated by 
 comma (,).
 </li>
+<script>
+
+<!--Exercise 4-->
+  document.getElementById("exercise4").addEventListener("click", function() {
+    alert("I said dont click me!");
+  });
+  
+</script>
+
 </html>
