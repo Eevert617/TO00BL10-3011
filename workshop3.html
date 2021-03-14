@@ -18,10 +18,65 @@ table, tr, td{
 </style>
 <script>
 
-<!-- JavaScript goes here -->
+<!-- Exercise 1 -->
+<!-- Button 1-->
+var pvm = new Date();
+function alert1() {
+  alert("You clicked me! " + new Date());
+}
 
+<!--Button 2-->
+var html = `<table border="1" cellspacing="1" width="60%">
+  <tbody><tr>
+		<th>Name</th>
+		<th>Position</th>		
+		<th>Salary</th>
+	</tr>
+	<tr>
+		<td>Alex</td>
+		<td>Ceo</td>		
+		<td>600€</td>
+	</tr>
+	<tr>
+		<td>Eve</td>
+		<td>Engineer</td>		
+		<td>400€</td>
+	</tr>
+	<tr>
+		<td>Kyle</td>
+		<td>Farmer</td>		
+		<td>300€</td>
+	</tr>
+	<tr>
+		<td>Tommi</td>
+		<td>Investor</td>		
+		<td>1600€</td>
+	</tr>
+</tbody></table>`
+function showTable() {
+  document.write(html);
+}
+<!--Button 3-->
+var persons = ["Nyssa P. Skinner", "593-4241 Lacus, St.","Cape Verde", 
+	       "Camilla F. Strickland","391-2150 Ac Rd.","Andorra",
+	       "Reagan U. Andrews", "P.O. Box 472, 2271 Mauris Ave","Faroe Islands",
+	       "Kelsey D. Clark", "P.O. Box 866, 7793 Aliquet Ave","Bulgaria"
+];
+var table = `
+`
+function htmltable(){
+  document.write(table);
+}
 
+<!--Exercise 2-->
+function exercise2() {
+  console.log("Stepped over my a mouse!");
+}
+function byebye() {
+  alert("Bye bye mouse!");
+}
 
+<!--Exercise 3-->
 </script>
 
 <h1>Workshop 3: JavaScript Events</h1>
@@ -33,9 +88,9 @@ good idea to save the lines of code you write during the exercises for later use
 <h2>Exercise 1</h2>
 <p>&nbsp;Below you will see three buttons. Edit the source code and add an onClick-events to these buttons.</p>
 <p>
-  <button>Button 1</button>
-  <button>Button 2</button>
-  <button>Button 3</button>
+  <button onclick="alert1()">Button 1</button>
+  <button onclick="showTable()">Button 2</button>
+  <button onclick="showTable()">Button 3</button>
 </p>
 
 <ul>
@@ -111,7 +166,7 @@ var persons = ["Nyssa P. Skinner", "593-4241 Lacus, St.","Cape Verde",
 </xmp>
 </ul>
 
-<h2>Exercise 2</h2>
+<h2 onmouseover="exercise2()", onmouseout="byebye()">Exercise 2</h2>
 
 <ul>
   <li>Add an&nbsp;onMouseOver event on the&nbsp;Heading "Exercise 2" of this page.&nbsp;It should&nbsp;fire when the users mouse is moved
