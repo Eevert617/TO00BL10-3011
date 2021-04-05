@@ -1,0 +1,70 @@
+h1 {
+    text-align: center;
+}
+
+.list {
+    background: rgb(223, 223, 223);
+    max-width: 600px;
+    width: 100%;
+    display: table;
+    margin: auto;
+    border: 1px solid #808080;
+}
+  
+input {
+    border: none;
+    display: block;
+    width: 98.45%;
+    line-height: 1.5;
+    padding: 8px 0 8px 10px;
+    border-bottom: 1px solid #808080;
+    outline: none;
+}
+  
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    color: #000000;
+    font-weight: 400;
+    border-bottom: 1px solid #808080;
+    line-height: 1.5;
+    padding: 8px 0;
+}
+
+ul li:before {
+    content: "\25A1";
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+ul li:hover {
+    background: rgb(206, 206, 206);
+    cursor: pointer;
+}
+  
+.checked {
+    color:green;
+}
+
+.checked:before {
+    content: "\2713";
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.checked:hover {
+    text-decoration: none;
+}
+
+.checked:after {
+    content: " (poista)";
+    color:red;
+}
+
+.error {
+    border-bottom: 2px solid red;
+}
