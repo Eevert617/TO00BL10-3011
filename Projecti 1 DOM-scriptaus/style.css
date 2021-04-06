@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    user-select: none;
 }
 
 .list {
@@ -33,6 +34,7 @@ ul li {
     border-bottom: 1px solid #808080;
     line-height: 1.5;
     padding: 8px 0;
+    user-select: none;
 }
 
 ul li:before {
