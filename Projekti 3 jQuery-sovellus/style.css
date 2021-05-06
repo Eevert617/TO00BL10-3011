@@ -1,0 +1,32 @@
+body {
+    display:none;
+}
+
+#fin {
+    user-select: none;
+    cursor: pointer;
+}
+
+#india {
+    user-select: none;
+    cursor: pointer;
+}
+
+#jp {
+    user-select: none;
+    cursor: pointer;
+}
+
+#swiss {
+    user-select: none;
+    cursor: pointer;
+}
+
+#uk {
+    user-select: none;
+    cursor: pointer;
+}
+
+.spacer {
+    height: 50px;
+}
